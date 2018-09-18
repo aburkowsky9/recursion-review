@@ -8,7 +8,7 @@ var stringifyJSON = function(obj) {
   var strArr = [];
   // base case : char.length = 1, wrap in quotation marks
   if (typeof(obj) === 'number' || typeof(obj) === 'boolean' || obj === null) {
-    return obj;
+    return "" + obj;
   }
   else if ((typeof(obj) === 'string' ) && (typeof(obj) !== 'function' && obj !== undefined)) {
     return '"' + obj + '"';
